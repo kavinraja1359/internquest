@@ -32,4 +32,4 @@ jobs:
     - run: sudo docker container rm test-container || true
     - run: sudo docker image rm test || true
     - run: sudo docker build -t test -f DockerFile .
-    - run: sudo docker run -p 8081:9092 --name test-container | echo "success" 
+    - run: sudo docker run -p 8081:9092 --name test-container -d test | echo "success" 
