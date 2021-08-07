@@ -27,7 +27,7 @@ jobs:
       run: mvn -B package --file pom.xml
       
       
-    - run: cd ~/actions-runner/deploy/transport/transport
+    - run: cd ~/actions-runner/transport/transport
     - run: sudo docker container stop test-container || true
     - run: sudo docker container rm test-container || true
     - run: sudo docker image rm test || true
