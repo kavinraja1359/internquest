@@ -4,9 +4,10 @@
 name: Maven Package
 
 on:
-  release:
-    types: [master]
-
+  push:
+   branches: [master]
+  pull_request:
+   branches: [master,kavinraja1359-patch-1]
 jobs:
   build:
 
