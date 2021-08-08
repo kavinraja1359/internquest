@@ -29,7 +29,7 @@ jobs:
     - name: Build with Maven
       run: mvn -B package --file pom.xml
       
-    - run: cd ~/actions-runner/deploy/learn/learn/
+    - run: cd ~/actions-runner/deploy/learn/learn
     - run: sudo docker cointainer stop cont || true
     - run: sudo docker cointainer rm cont || true
     - run: sudo docker rm image rxp|| true
