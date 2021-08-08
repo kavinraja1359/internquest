@@ -33,5 +33,5 @@ jobs:
     - run: sudo docker cointainer stop cont || true
     - run: sudo docker cointainer rm cont || true
     - run: sudo docker rm image rxp|| true
-    - run: sudo docker build image -t rxp -f PATH/DockerFile .
+    - run: sudo docker build image -t rxp  .
     - run: sudo docker run -name cont -d rxp -p 8081:9092 |echo 'success'
